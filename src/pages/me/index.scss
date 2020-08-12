@@ -1,0 +1,42 @@
+.me-box {
+  .user-base-box {
+    display: flex;
+    padding: 36px;
+    background-color: #fff;
+    margin-bottom: 24px;
+
+    .user-avatar {
+      width: 160px;
+      height: 160px;
+      min-width: 160px;
+      min-height: 160px;
+
+      &-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: #f0f0f0;
+      }
+    }
+
+    .user-info {
+      height: 100%;
+      padding-left: 36px;
+
+      .user-name {
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      .user-id {
+        font-size: 24px;
+        color: #999;
+      }
+    }
+  }
+
+  .cell-group{
+    border-top: 24px solid #f0f0f0;
+  }
+}

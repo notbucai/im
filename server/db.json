@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "username": "bucai",
+      "password": "wx123456"
+    },
+    {
+      "username": "administrator",
+      "password": "wx123456"
+    },
+    {
+      "username": "xxx",
+      "password": "123"
+    },
+    {
+      "username": "霍渠",
+      "password": "123456"
+    }
+  ]
+}

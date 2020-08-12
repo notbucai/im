@@ -1,0 +1,30 @@
+.message-system {
+  margin: 24px 36px;
+  box-sizing: border-box;
+
+  background-color: rgb(255, 220, 220);
+  border-radius: 8px;
+  border: 1px solid rgb(222, 126, 126);
+
+  color: #444;
+
+  padding: 24px;
+  .actions{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .btn {
+    padding: 12px 24px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 115, 255);
+    display: flex;
+    margin-left: 24px;
+
+    &.confirm {
+      background-color: rgb(79, 146, 228);
+      color: #fff;
+    }
+  }
+}

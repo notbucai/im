@@ -1,0 +1,149 @@
+$component: '.bc-toast';
+
+$zindex-toast: 9999;
+$spacing-v-lg: 4px;
+$spacing-h-xl: 8px;
+$font-size-base: 28px;
+$color-white: #fff;
+$color-black-0: #333;
+$border-radius-md: 6px;
+$spacing-v-md: 10px;
+$line-height-zh: 2;
+$spacing-v-sm: 12px;
+$spacing-h-lg: 12px;
+$at-toast-min-width: 106px !default;
+$at-toast-image-size: 120px !default;
+$at-toast-font-size: $font-size-base !default;
+$at-toast-icon-size: 24px !default;
+$at-toast-color: $color-black-0;
+$at-toast-bg-color: rgba($color: $color-white, $alpha: 0.8);
+
+@keyframes bcAnimationIn {
+
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+
+  5% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+
+  10%,
+  20%,
+  30% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+
+  15%,
+  25%,
+  35% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+
+  45% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+#{$component} {
+
+  &__overlay {
+    position: fixed;
+    opacity: 0;
+    z-index: $zindex-toast;
+  }
+
+  .toast-body {
+    position: fixed;
+    bottom: 14%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: constant(safe-area-inset-bottom);
+    /* 兼容 iOS < 11.2 */
+    margin-bottom: env(safe-area-inset-bottom);
+    /* 兼容 iOS >= 11.2 */
+
+    padding: 0;
+    border-radius: $border-radius-md;
+    background-color: $at-toast-bg-color;
+    box-shadow: 0 0 8px rgba($color: $at-toast-color, $alpha: .2);
+    z-index: $zindex-toast;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      border-radius: $border-radius-md;
+      overflow: hidden;
+
+      animation: bcAnimationIn 1s;
+
+      &__icon {
+        color: $color-white;
+        font-size: $at-toast-icon-size;
+        text-align: center;
+        border-radius: $border-radius-md;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 100%;
+      }
+
+      &__img {
+        line-height: 0;
+        text-align: center;
+
+        &-item {
+          width: $at-toast-image-size;
+          height: $at-toast-image-size;
+        }
+      }
+
+      &__info {
+        color: $at-toast-color;
+        font-size: $at-toast-font-size;
+        // text-align: center;
+        padding: 0 24px;
+        min-width: $at-toast-min-width;
+      }
+    }
+
+    &--text {
+      padding: $spacing-v-sm $spacing-h-lg;
+      line-height: $line-height-zh;
+      min-width: initial;
+
+      .toast-body-content__info {
+        margin-top: 0;
+      }
+    }
+
+    &.at-toast__body--custom-image,
+    &.at-toast__body--success,
+    &.at-toast__body--error,
+    &.at-toast__body--loading {
+      padding-bottom: $spacing-v-lg - (($at-toast-font-size * $line-height-zh - $at-toast-font-size) / 2);
+    }
+  }
+}

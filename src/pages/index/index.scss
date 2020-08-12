@@ -1,0 +1,55 @@
+.bc-index {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1d2e3f;
+  display: flex;
+  flex-direction: column;
+
+  .banner-box {
+    flex: 1;
+    position: relative;
+
+    .banner-iamge {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .copy-box {
+    height: 200px;
+    background-color: #1d2e3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+
+    .copy {
+      &-logo-iamge {
+        width: 60px;
+        height: 64px;
+      }
+
+      &-info {
+        font-size: 24px;
+      }
+    }
+
+    .count-down_box {
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+  }
+}

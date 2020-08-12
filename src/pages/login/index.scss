@@ -1,0 +1,48 @@
+.login-box {
+  padding: 36px;
+  background-color: #ecedf2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  .login-header {
+    margin-top: 120px;
+    margin-bottom: 36px;
+
+    .login-title {
+      width: 500px;
+      height: 200px;
+      // background-color: #000;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      .logo-iamge{
+        width: 124px;
+        height: 140px;
+      }
+    }
+  }
+
+  .form-item {
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: center;
+  }
+  .login-footer{
+    color: #46a6ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 36px;
+    padding-bottom: constant(safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+    padding-bottom: env(safe-area-inset-bottom); /* 兼容 iOS >= 11.2 */
+  }
+}
