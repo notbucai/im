@@ -6,17 +6,19 @@
 
 ## 展示图片（丑是有点，但是问题不大）
 
-<img src="./temp/WechatIMG1.jpeg" width="20%"/>
-<img src="./temp/WechatIMG2.jpeg" width="20%"/>
-<img src="./temp/WechatIMG3.jpeg" width="20%"/>
-<img src="./temp/WechatIMG4.jpeg" width="20%"/>
-<img src="./temp/WechatIMG5.jpeg" width="20%"/>
-<img src="./temp/WechatIMG6.jpeg" width="20%"/>
-<img src="./temp/WechatIMG7.jpeg" width="20%"/>
+<img src="./temp/WechatIMG1.jpeg" width="30%"/>
+<img src="./temp/WechatIMG2.jpeg" width="30%"/>
+<img src="./temp/WechatIMG3.jpeg" width="30%"/>
+<img src="./temp/WechatIMG4.jpeg" width="30%"/>
+<img src="./temp/WechatIMG5.jpeg" width="30%"/>
+<img src="./temp/WechatIMG6.jpeg" width="30%"/>
+<img src="./temp/WechatIMG7.jpeg" width="30%"/>
 
 ## 体验地址
 
 ### h5地址
+
+> h5表现目前有点差强人意。
 
 [https://im.notbucai.com/h5/](https://im.notbucai.com/h5/)
 
