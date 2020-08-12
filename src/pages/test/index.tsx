@@ -8,15 +8,6 @@ import './index.scss';
 
 export default () => {
 
-  useReady(() => {
-    setTimeout(() => {
-      Taro.pageScrollTo({
-        scrollTop: 9999999999,
-        duration: 0,
-      });
-    }, 1000);
-  });
-
   usePullDownRefresh(() => {
     console.log('我根本不会执行');
     setTimeout(() => {
@@ -27,7 +18,7 @@ export default () => {
   return (
     <View className='test_fixed_page'>
       <View className='fixed' >
-        fixed
+        <Input className='f-input' value='click me' />
       </View>
     </View>
   )
