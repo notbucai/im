@@ -2,7 +2,7 @@
  * @Author: bucai
  * @Date: 2020-07-15 22:27:49
  * @LastEditors: bucai
- * @LastEditTime: 2020-08-11 13:40:43
+ * @LastEditTime: 2020-08-12 16:28:56
  * @Description: 
  */
 import React, { useEffect, useState, useRef, useCallback } from 'react';
@@ -106,12 +106,22 @@ export default () => {
   });
 
   usePullDownRefresh(async () => {
+    console.log(1);
     try {
-      handleLoadData();
+      await handleLoadData();
     } catch (error) {
       console.log('error', error);
     } finally {
-      Taro.stopPullDownRefresh()
+      console.log(2);
+
+      Taro.stopPullDownRefresh({
+        success () {
+          console.log(1);
+        },
+        fail () {
+          console.log(2);
+        }
+      })
     }
   });
 

@@ -58,6 +58,8 @@ $fi-padding:20px;
       padding: 0 30px;
       transition: margin-bottom .1s;
 
+      font-size: 28px;
+
       &.keyup {
         margin-bottom: $fi-padding;
       }
