@@ -1,0 +1,15 @@
+.test_fixed_page {
+  height: 200vh;
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  width: 120px;
+  height: 120px;
+  background-color: #fa0;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+}
